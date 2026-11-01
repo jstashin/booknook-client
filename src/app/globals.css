@@ -128,3 +128,16 @@
     @apply font-sans;
   }
 }
+.booknook-banner {
+  --swiper-theme-color: #294f3b;
+  --swiper-navigation-size: 20px;
+  --swiper-pagination-bottom: 20px;
+}
+
+.booknook-banner .swiper-button-prev,
+.booknook-banner .swiper-button-next {
+  width: 34px;
+  height: 34px;
+  border-radius: 9999px;
+  background: rgb(255 255 255 / 75%);
+}
