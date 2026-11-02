@@ -2,10 +2,16 @@
 
 import Link from "next/link";
 import { BookOpen, ArrowRight } from "lucide-react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation, A11y } from "swiper/modules";
 
-import { Button } from "@/components/ui/button";
+import { Swiper, SwiperSlide } from "swiper/react";
+import {
+  Autoplay,
+  Pagination,
+  Navigation,
+  A11y,
+} from "swiper/modules";
+
+import { buttonVariants } from "@/components/ui/button";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -87,16 +93,19 @@ export default function Banner() {
                     {slide.description}
                   </p>
 
-                  <Button
-                    asChild
-                    size="lg"
-                    className="mt-7 bg-[#294f3b] text-white hover:bg-[#203e2e]"
+                  <Link
+                    href="/books"
+                    className={`${buttonVariants({
+                      size: "lg",
+                    })} mt-7 bg-[#294f3b] text-white hover:bg-[#203e2e]`}
                   >
-                    <Link href="/books">
-                      Browse Books
-                      <ArrowRight className="size-4" aria-hidden="true" />
-                    </Link>
-                  </Button>
+                    Browse Books
+
+                    <ArrowRight
+                      className="size-4"
+                      aria-hidden="true"
+                    />
+                  </Link>
                 </div>
 
                 {/* Decorative book illustration */}
