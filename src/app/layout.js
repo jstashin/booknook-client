@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
+import { Toaster } from "sonner";
 
 import "./globals.css";
 
@@ -35,6 +36,8 @@ export default function RootLayout({ children }) {
         <main className="flex-1">{children}</main>
 
         <Footer />
+        <Footer />
+<Toaster richColors position="top-right" />
       </body>
     </html>
   );
