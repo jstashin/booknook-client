@@ -1,3 +1,4 @@
+import AddBookForm from "@/components/books/AddBookForm";
 import { requireUser } from "@/lib/require-user";
 
 export const metadata = {
@@ -8,22 +9,13 @@ export default async function AddBookPage() {
   const user = await requireUser("/add-book");
 
   return (
-    <section className="mx-auto max-w-3xl px-4 py-16">
+    <section className="mx-auto max-w-3xl px-4 py-12">
       <h1 className="text-3xl font-bold">Add a Book</h1>
-
-      <p className="mt-4 text-muted-foreground">
-        Welcome, {user.name}. Share your next great read.
+      <p className="mt-3 text-muted-foreground">
+        Share a book with the BookNook community.
       </p>
 
-      <div className="mt-8 rounded-lg border bg-card p-6">
-        <p className="text-sm">
-          Logged in as: {user.email}
-        </p>
-
-        <p className="mt-3 text-sm text-muted-foreground">
-          Your book creation form will go here.
-        </p>
-      </div>
+      <AddBookForm name={user.name} email={user.email} />
     </section>
   );
 }

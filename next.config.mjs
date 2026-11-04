@@ -6,6 +6,11 @@ const nextConfig = {
         hostname: "covers.openlibrary.org",
         pathname: "/b/**",
       },
+      {
+        protocol: "https",
+        hostname: "i.ibb.co",
+        pathname: "/**",
+      },
     ],
   },
 };

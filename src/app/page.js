@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-
+import LibrarySections from "@/components/home/LibrarySections";
 import Banner from "@/components/home/Banner";
 import NewArrivals from "@/components/home/NewArrivals";
 
@@ -29,6 +29,7 @@ export default function HomePage() {
       <Suspense fallback={<BooksLoading />}>
         <NewArrivals />
       </Suspense>
+      <LibrarySections/>
     </>
   );
 }
