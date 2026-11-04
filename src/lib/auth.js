@@ -38,6 +38,13 @@ export const auth = betterAuth({
   },
 
   plugins: [jwt()],
+  session:{cookieCache:{
+    enabled:true,
+    strategy:'jwt',
+    maxAge:10*24*60*60
+  }
+
+  },
 
   hooks: {
     before: createAuthMiddleware(async (ctx) => {
