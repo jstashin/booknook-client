@@ -4,7 +4,7 @@ BookNook is an online library where readers can discover books, share their own 
 
 ## Live Website
 
-ADD_YOUR_LIVE_SITE_URL_HERE
+https://booknook-client-woad.vercel.app
 
 ## Repositories
 
@@ -208,9 +208,7 @@ Before testing the deployed application:
 4. Configure all database, authentication, Google, and ImgBB credentials in the hosting dashboards.
 5. Add the production Google callback URL:
 
-   ```text
-   https://YOUR_FRONTEND_DOMAIN/api/auth/callback/google
-   ```
+  
 
 6. Redeploy and test authentication, private-route refresh, cover uploads, borrowing, and returns.
 7. Replace the Live Website placeholder in this README with the actual deployed URL.
