@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { toast } from "sonner";
-
+import GoogleSignIn from "@/components/auth/GoogleSignIn";
 import { authClient } from "@/lib/auth-client";
 
 export default function LoginForm() {
@@ -39,7 +39,6 @@ export default function LoginForm() {
         return;
       }
 
-      // Read the intended route after login.
       const params = new URLSearchParams(window.location.search);
       const requestedPath = params.get("next");
 
@@ -146,6 +145,7 @@ export default function LoginForm() {
             {isSubmitting ? "Logging in..." : "Login"}
           </button>
         </form>
+        <GoogleSignIn />
 
         <p className="mt-6 text-center text-sm text-muted-foreground">
           Don’t have an account?{" "}

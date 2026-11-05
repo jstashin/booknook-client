@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { toast } from "sonner";
+import GoogleSignIn from "@/components/auth/GoogleSignIn";
 
 import { authClient } from "@/lib/auth-client";
 
@@ -188,6 +189,7 @@ export default function RegisterForm() {
             {isSubmitting ? "Creating account..." : "Register"}
           </button>
         </form>
+        <GoogleSignIn fromRegister />
 
         <p className="mt-6 text-center text-sm text-muted-foreground">
           Already have an account?{" "}
