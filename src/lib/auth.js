@@ -10,7 +10,7 @@ if (!process.env.MONGODB_URI) {
   throw new Error("MONGODB_URI is missing from frontend .env");
 }
 
-// Reuse the client during development hot reloads.
+
 const client =
   globalThis.booknookMongoClient ||
   new MongoClient(process.env.MONGODB_URI);

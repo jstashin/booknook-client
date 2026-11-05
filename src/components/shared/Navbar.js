@@ -205,7 +205,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b bg-background">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-3 px-4 sm:px-6 lg:px-8">
-        {/* Logo */}
+      
         <Link
           href="/"
           onClick={closeMenu}
@@ -220,7 +220,7 @@ export default function Navbar() {
           </span>
         </Link>
 
-        {/* Desktop navigation */}
+      
         <nav
           aria-label="Main navigation"
           className="hidden items-center gap-1 md:flex"
@@ -237,12 +237,11 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* Desktop account */}
+      
         <div className="hidden shrink-0 md:block">
           {renderAccount()}
         </div>
 
-        {/* Mobile navigation */}
         <div className="md:hidden">
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger

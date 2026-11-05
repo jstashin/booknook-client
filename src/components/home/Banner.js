@@ -73,7 +73,7 @@ export default function Banner() {
           <SwiperSlide key={slide.id}>
             <div className={`${slide.background} text-[#223a30]`}>
               <div className="mx-auto grid min-h-[560px] max-w-7xl items-center gap-10 px-12 py-16 md:grid-cols-2 md:px-16 lg:px-20">
-                {/* Slide content */}
+                
                 <div>
                   <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#546b50]">
                     {slide.label}
@@ -108,7 +108,6 @@ export default function Banner() {
                   </Link>
                 </div>
 
-                {/* Decorative book illustration */}
                 <div
                   className="flex items-center justify-center py-6"
                   aria-hidden="true"

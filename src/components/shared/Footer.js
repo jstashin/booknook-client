@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="mt-auto border-t bg-muted/40">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-3 lg:px-8">
-        {/* Website information */}
+       
         <div>
           <Link
             href="/"
@@ -22,7 +22,7 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Navigation */}
+       
         <div>
           <h2 className="text-base font-semibold">Explore</h2>
 
@@ -44,11 +44,9 @@ export default function Footer() {
           </nav>
         </div>
 
-        {/* Contact and social links */}
         <div>
           <h2 className="text-base font-semibold">Get in touch</h2>
 
-          {/* Replace this placeholder with your real contact email. */}
           <a
             href="mailto:hello@booknook.example"
             className="mt-4 inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground"
@@ -57,7 +55,7 @@ export default function Footer() {
             hello@booknook.example
           </a>
 
-          {/* Replace these URLs with your BookNook social profiles. */}
+         
           <div className="mt-5 flex gap-3">
             <a
               href="https://www.facebook.com/"
