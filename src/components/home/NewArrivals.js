@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 import BookCard from "@/components/books/BookCard";
-import { Button } from "@/components/ui/button";
 
 export default async function NewArrivals() {
   let books;
@@ -64,9 +63,12 @@ export default async function NewArrivals() {
       )}
 
       <div className="mt-10 flex justify-center">
-        <Button asChild>
-          <Link href="/books">See All Books</Link>
-        </Button>
+       <Link
+  href="/books"
+  className="inline-flex h-11 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground hover:opacity-90"
+>
+  See All Books
+</Link>
       </div>
     </section>
   );
